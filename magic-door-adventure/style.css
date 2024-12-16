@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    background-image: url('background.jpg'); /* Replace with a mystical or adventure-themed background */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for Page Content */
+.container {
+    background: rgba(0, 0, 0, 0.8); /* Dark translucent background */
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: 100px auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Typography */
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #6ed5f5;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+p {
+    font-size: 1.4em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+/* Story Box for Riddles or Messages */
+.story-box {
+    padding: 20px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1); /* Subtle translucent background */
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Doors Layout */
+.doors {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.doors img {
+    width: 220px;
+    height: 280px;
+    cursor: pointer;
+    border: 2px solid #6ed5f5;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doors img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.8em;
+    color: #fff;
+    background-color: #6ed5f5;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+    background-color: #f08c00;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Treasure Image */
+.treasure-img {
+    width: 400px;
+    margin-top: 20px;
+    animation: glow 2s infinite alternate;
+}
+
+/* Glow Animation for Treasure */
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 10px #f9c74f);
+    }
+    100% {
+        filter: drop-shadow(0 0 30px #f9c74f);
+    }
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .doors img {
+        width: 100px;
+        height: 300px;
+    }
+}
+
+.door-image {
+    display: block;
+    margin: 20px auto; /* Centers the image */
+    width: 200px; /* Adjust the size as needed */
+    height: auto; /* Keeps the aspect ratio */
+    border: 3px solid #f9c74f; /* Optional: Adds a border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+}
+
